@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:text="擲骰子"
         android:textSize="30sp"
+        android:onClick="Roll"
         app:layout_constraintBottom_toTopOf="@+id/txv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

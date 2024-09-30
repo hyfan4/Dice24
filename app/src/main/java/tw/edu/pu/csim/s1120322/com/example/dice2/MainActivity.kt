@@ -1,6 +1,8 @@
 package tw.edu.pu.csim.s1120322.com.example.dice2
 
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,9 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+    fun Roll(v:View){
+        var t:TextView = findViewById(R.id.txv)
+        t.text=(1..6).random().toString()
     }
 }
